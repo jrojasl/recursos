@@ -70,10 +70,17 @@ public class MainActivity extends AppCompatActivity {
     //BT
     public void habilitarBluetooth(View view){
 
+
+
+
+
         Permiso permiso = new Permiso(context, activity);
+
         Bluetooth bluetooth = new Bluetooth();
 
         if(bluetooth.habilitarBluetooth(permiso)){
+            Toast.makeText(context, "BT", Toast.LENGTH_SHORT).show();
+
             startActivityForResult(bluetooth.getHabilitarBT(), bluetooth.getCodigo_habilitaBT());
         }
 
