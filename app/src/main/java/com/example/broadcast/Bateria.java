@@ -13,6 +13,7 @@ public class Bateria {
     IntentFilter batteryFilter;
     private int nivelDeBateria;
 
+
     public Bateria() {
         batteryFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
     }
@@ -41,5 +42,6 @@ public class Bateria {
             }
         }
     }
+
 
 }

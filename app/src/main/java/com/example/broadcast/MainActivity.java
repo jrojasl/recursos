@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+
     public void casteo(){
         tvVersionAndroid = (TextView) findViewById(R.id.tvVersionAndroid);
         nombreArchivo = (EditText) findViewById(R.id.etNombreArchivo);

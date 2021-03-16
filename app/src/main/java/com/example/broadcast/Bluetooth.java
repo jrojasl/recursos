@@ -43,7 +43,6 @@ public class Bluetooth {
 
 
         metodoBandera();
-        permiso.solicitarPermiso(Manifest.permission.BLUETOOTH);
 
 
         if(BTadaptador == null){
@@ -56,6 +55,7 @@ public class Bluetooth {
 
 
         if (!BTadaptador.isEnabled()){
+            permiso.solicitarPermiso(Manifest.permission.BLUETOOTH);
 
             habilitarBT = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             return true;
